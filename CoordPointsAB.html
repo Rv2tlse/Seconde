@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        mark {
+            background-color: yellow;
+        }
+        
+        /* Masquer l'image initialement */
+        #imageCorrection {
+            display: none;}
+        #imageCorrection1 {
+            display: none;}
+        #imageCorrection2 {
+            display: none;}
+        #imageCorrection3 {
+            display: none;}
+        #imageCorrection4 {
+            display: none;
+        }
+    </style>
+    <title>Coordonnées de points</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<center><img src="https://rv2tlse.com/wp-content/uploads/2023/01/Rv2tlseTransparent.png"></center>
+<div id="touchArea">
+<center><mark style="background-color: yellow;" id="demo"></mark></center>
+    <script>
+    let hasTextBeenWritten = false;
+    let compteur=0;
+
+    function typeWriter(text, i, callback) {
+        if (i < text.length) {
+            document.getElementById("demo").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(function() { typeWriter(text, i, callback); }, 50);
+        } else if (callback) {
+            callback();
+        }
+    }
+
+    // Texte à écrire
+    var text = "Quelles sont les coordonnées de ces deux points?";
+
+    // Fonction pour démarrer l'animation de typewriter
+    function startTypeWriter() {
+        if ((!hasTextBeenWritten)&&(document.getElementById("demo").innerText == "")) {
+            document.getElementById("demo").innerHTML = ""; // Réinitialise le texte avant de démarrer
+            typeWriter(text, 0, function() {
+            hasTextBeenWritten = true;
+            compteur++;
+            });
+        } else if (document.getElementById("demo").innerText == text){
+            // Afficher l'image de correction lors du second clic
+if (compteur!=3){       document.getElementById('imageCorrection'+compteur).style.display = 'block';
+compteur++;
+}          // Supprime l'écouteur d'événements après le second clic
+if (compteur==3)    {
+touchArea.removeEventListener('click', startTypeWriter);}
+        }
+    }
+
+    // Ajoute un écouteur d'événements pour 'click' sur la zone de toucher
+    var touchArea = document.getElementById('touchArea');
+    touchArea.addEventListener('click', startTypeWriter);
+
+    // Actualise la page sur un double-clic
+    touchArea.addEventListener('dblclick', function() {
+        location.reload();
+        //window.location.href="https://rv2tlse.com ";
+    });
+    </script>
+<center><img src="https://rv2tlse.com/wp-content/uploads/2024/08/ImageCoordPointsAB.jpg" style="max-width: 100%;"></center><br><br>
+<img id="imageCorrection" src="https://rv2tlse.com/wp-content/uploads/2024/05/CorrectionVecteur.jpg" style="max-width: 100%;">
+<center><img id="imageCorrection1"
+src="https://rv2tlse.com/wp-content/uploads/2024/08/CoordPointA.jpg" style="max-width: 50%;">
+<img id="imageCorrection2"
+src="https://rv2tlse.com/wp-content/uploads/2024/08/CoordPointB.jpg" style="max-width: 50%;">
+<img id="imageCorrection3"
+src="https://rv2tlse.com/wp-content/uploads/2024/08/CoordAB3.jpg" style="max-width: 50%;"></center>
+</div>
+</body>
+</html>
