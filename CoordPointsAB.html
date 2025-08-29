@@ -3,117 +3,111 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cours particuliers de mathématiques en visioconférence – Tarif solidaire</title>
-  <meta name="description" content="Professeur particulier de mathématiques depuis près de 20 ans. Accompagnement de lycéens (Seconde à Terminale, spécialités & Maths complémentaires) en visioconférence. Tarif solidaire, essai offert." />
+  <title>Cours de maths en visio – Spécial Lycéens</title>
+  <meta name="description" content="Cours particuliers de mathématiques pour lycéens. Visio, méthode claire, exercices ciblés. Essai gratuit. Tarif solidaire." />
   <meta name="robots" content="index, follow" />
-  <!-- Open Graph / Social -->
-  <meta property="og:title" content="Cours particuliers de mathématiques en visioconférence – Tarif solidaire" />
-  <meta property="og:description" content="Prof expérimenté, 20 ans d'accompagnement des lycéens. Suivi personnalisé en visio, places limitées, essai offert." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://votre-domaine.fr/" />
-  <meta property="og:image" content="https://votre-domaine.fr/og-image.jpg" />
-  <link rel="canonical" href="https://votre-domaine.fr/" />
   <style>
-    :root{--bg:#ffffff;--card:#ffffff;--muted:#6b7280;--accent:#fbbf24;--accent-2:#f59e0b;--text:#111827;--white:#ffffff;--warn:#eab308;--danger:#ef4444;--shade:#e5e7eb;}
+    /* ==========================
+       PALETTE JEUNE & ÉNERGIQUE
+       ========================== */
+    :root{
+      --bg:#0a0f1e;             /* nuit bleutée */
+      --bg-2:#0e1326;            /* variation */
+      --glass:#0b1224cc;         /* panel */
+      --text:#e6edf6;            /* quasi blanc */
+      --muted:#a7b0c0;           /* gris bleuté */
+      --accent:#7c3aed;          /* violet */
+      --accent-2:#06b6d4;        /* cyan */
+      --accent-3:#a3e635;        /* lime */
+      --line:#1f2a44;            /* bordures */
+    }
+
+    /* RESET */
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:#ffffff;color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.6}
-    a{color:var(--white);text-decoration:none}
+    html,body{margin:0;padding:0;background:radial-gradient(1200px 600px at 90% -10%, #1a1442 0%, #0a0f1e 40%, #070a16 100%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
     .container{max-width:1100px;margin:0 auto;padding:clamp(16px,3vw,32px)}
-    header.site{position:sticky;top:0;backdrop-filter:saturate(120%) blur(6px);background:#ffffff;border-bottom:1px solid var(--shade);z-index:50}
+
+    /* TOP BAR */
+    header.site{position:sticky;top:0;background:linear-gradient(180deg,#0a0f1ee6,#0a0f1ea6);backdrop-filter:saturate(160%) blur(8px);border-bottom:1px solid var(--line);z-index:50}
     header .inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .brand{display:flex;align-items:center;gap:10px}
-    .logo{display:grid;place-items:center;width:40px;height:40px;border-radius:8px;background:linear-gradient(180deg,#fde68a,#fbbf24);box-shadow:0 0 0 1px #f59e0b22 inset, 0 6px 16px #f59e0b22}
-    .brand b{font-weight:700;font-size:18px}
-    .cta{display:inline-block;padding:12px 18px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#1a1300;font-weight:700;box-shadow:0 6px 14px #f59e0b2b;transition:transform .08s ease}
-    .cta:hover{transform:translateY(-1px)}
-    .ghost{border:1px solid #334155;background:#0b1224;color:var(--text)}
-    /* Hero */
-    .hero{padding:56px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:conic-gradient(from 180deg at 50% 50%, var(--accent) 0deg, var(--accent-2) 160deg, var(--accent-3) 300deg, var(--accent) 360deg);box-shadow:0 0 28px #7c3aed44 inset, 0 8px 28px #06b6d433}
+    .logo b{font-size:22px;filter:drop-shadow(0 2px 8px #0008)}
+    .brand b{font-weight:800;font-size:18px;letter-spacing:.2px}
+
+    /* BUTTONS */
+    .cta{display:inline-block;padding:12px 18px;border-radius:14px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#0b0f19;font-weight:800;box-shadow:0 10px 22px #06b6d428,0 0 0 1px #000 inset;transition:transform .08s ease, filter .2s ease}
+    .cta:hover{transform:translateY(-1px);filter:saturate(120%)}
+    .ghost{border:1px solid var(--line);background:transparent;color:var(--text);border-radius:14px;padding:11px 18px}
+
+    /* HERO */
+    .hero{padding:48px 0}
     .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
     @media (max-width:900px){.grid{grid-template-columns:1fr}.hero{padding:28px 0}}
     h1{font-size:clamp(28px,4.2vw,52px);line-height:1.15;margin:0 0 12px}
-    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid #334155;border-radius:999px;color:var(--muted);font-size:14px}
-    .eyebrow svg{width:16px;height:16px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:14px;background:#0a0f1e}
     .lead{font-size:clamp(16px,1.6vw,20px);color:#cbd5e1;margin:10px 0 18px}
     .badges{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
-    .badge{font-size:12px;border:1px solid #334155;color:#cbd5e1;border-radius:999px;padding:6px 10px;display:inline-flex;align-items:center;gap:6px}
-    .hero-card{background:#ffffff;border:1px solid var(--shade);border-radius:12px;padding:18px}
-    .hero-card .panel{background:#ffffff;border:1px solid var(--shade);border-radius:10px;padding:18px}
-    .panel h3{margin:0 0 8px}
+    .badge{font-size:12px;border:1px solid var(--line);color:#d9e2ef;border-radius:999px;padding:6px 10px;background:#0e1430aa;display:inline-flex;align-items:center;gap:6px}
 
-    /* Sections */
-    section{padding:48px 0;border-top:1px solid var(--shade)}
+    /* HERO CARD (FORM) */
+    .hero-card{background:linear-gradient(160deg,#0c1228,#0a0f1e 60%);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 10px 40px #0008}
+    .hero-card .panel{background:var(--glass);border:1px solid var(--line);border-radius:14px;padding:18px}
+
+    /* SECTIONS */
+    section{padding:48px 0;border-top:1px solid var(--line)}
     h2{font-size:clamp(22px,3vw,34px);margin:0 0 10px}
     .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     @media (max-width:900px){.cols{grid-template-columns:1fr}}
-    .card{background:var(--card);border:1px solid var(--shade);border-radius:12px;padding:18px}
+    .card{background:linear-gradient(180deg,#0b1224,#0a0f1e);border:1px solid var(--line);border-radius:16px;padding:18px}
     .card h3{margin-top:0}
 
-    /* Pricing */
+    /* PRICING */
     .pricing{display:grid;grid-template-columns:1fr 1fr;gap:18px}
     @media (max-width:900px){.pricing{grid-template-columns:1fr}}
-    .price{background:#ffffff;border:1px solid var(--shade);border-radius:12px;padding:22px}
-    .price .amount{font-size:40px;font-weight:800}
-    .note{color:#94a3b8;font-size:14px}
+    .price{background:linear-gradient(180deg,#0b1224 0%, #0a0f1e 100%);border:1px solid var(--line);border-radius:16px;padding:22px}
+    .price .amount{font-size:40px;font-weight:900;background:linear-gradient(90deg,var(--accent-3),var(--accent-2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+    .note{color:#aab4c6;font-size:14px}
 
     /* FAQ */
-    details{background:#ffffff;border:1px solid var(--shade);border-radius:10px;padding:14px}
+    details{background:#0b1224;border:1px solid var(--line);border-radius:12px;padding:14px}
     details+details{margin-top:10px}
-    summary{cursor:pointer;font-weight:600}
+    summary{cursor:pointer;font-weight:700}
 
-    /* Footer */
-    footer{padding:28px 0;color:#9ca3af}
-    .mini{font-size:12px;color:#94a3b8}
-
-    /* Floating bar */
-    .floatbar{position:sticky;bottom:0;inset
+    /* FLOATING BAR */
+    .floatbar{position:sticky;bottom:0;inset-inline:0;background:#0a0f1eec;backdrop-filter:saturate(140%) blur(8px);border-top:1px solid var(--line)}
     .floatbar .inner{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:10px 0}
-    .floatbar .cta{padding:10px 16px}
 
-    /* Form */
+    /* FORM */
     form{display:grid;gap:10px}
-    input,select,textarea{width:100%;padding:12px;border-radius:10px;border:1px solid #334155;background:#0b1224;color:var(--text)}
-    label{font-size:14px;color:#cbd5e1}
-    .inline{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-    @media (max-width:700px){.inline{grid-template-columns:1fr}}
-    .success{display:none;margin-top:8px;color:#86efac}
+    label{font-size:13px;color:#cbd5e1}
+    input,select,textarea{width:100%;padding:12px;border-radius:12px;border:1px solid var(--line);background:#0a0f1e;color:var(--text)}
 
-    /* Utilities */
+    /* UTILITIES */
     .muted{color:var(--muted)}
+    .mini{font-size:12px;color:#a7b0c0}
     .center{text-align:center}
-    .mb-0{margin-bottom:0}
+
+    /* FUN MICRO-ANIMS */
+    @keyframes pulseGlow{0%{box-shadow:0 0 0 0 #a3e63533}70%{box-shadow:0 0 0 16px #a3e63500}100%{box-shadow:0 0 0 0 #a3e63500}}
+    .pulse{animation:pulseGlow 2.2s infinite}
   </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Cours particuliers de mathématiques en visioconférence",
-    "description": "Professeur particulier de maths avec près de 20 ans d'expérience, accompagnement des lycéens (Seconde, Première, Terminale) à distance.",
-    "areaServed": "France",
-    "priceRange": "€",
-    "sameAs": ["https://calendly.com/votre-lien"],
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "EUR",
-      "price": "Tarif solidaire",
-      "description": "Séance d'essai de 30 minutes offerte"
-    }
-  }
-  </script>
 </head>
 <body>
   <header class="site">
     <div class="container inner">
       <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
+        <div class="logo" aria-hidden="true"><b>π</b></div>
         <div>
           <b>Maths en Visio</b><br>
-          <span class="mini">Prof particulier – Lycée</span>
+          <span class="mini">Spécial lycéens • Tarif solidaire</span>
         </div>
       </div>
       <nav>
-        <a class="cta ghost" href="#tarifs">Tarif solidaire</a>
-        <a class="cta" href="#rdv">Réserver un appel</a>
+        <a class="cta ghost" href="#programme">Méthode</a>
+        <a class="cta" href="#rdv">Essai gratuit</a>
       </nav>
     </div>
   </header>
@@ -123,32 +117,27 @@
     <section class="hero">
       <div class="container grid">
         <div>
-          <span class="eyebrow" aria-label="Expérience">
-            <!-- star icon -->
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            Près de 20 ans d'accompagnement des lycéens
-          </span>
-          <h1>Des progrès visibles en mathématiques <br/> en <em>visioconférence</em> – <span style="white-space:nowrap">tarif solidaire</span></h1>
-          <p class="lead">Seconde, Première (tronc commun & spécialité), Terminale (Spé & Maths Compl.). Méthode claire, exercices corrigés, suivi entre les séances, échanges avec les parents.</p>
+          <span class="eyebrow" aria-label="Expérience">🎧 Adapté aux lycéens • 🎯 Objectif bac</span>
+          <h1>Progresse en maths <em>vite et bien</em> en visio</h1>
+          <p class="lead">Seconde, Première, Terminale (Spé & Maths compl.). Explications claires, exercices ciblés, astuces d'examen, suivi rapide sur mobile.</p>
           <div class="badges" role="list" aria-label="Points forts">
-            <span class="badge">✅ Essai gratuit 30 min</span>
-            <span class="badge">🎯 Objectif: points au bulletin & bac</span>
-            <span class="badge">🖥️ 100% à distance (Zoom/Meet)</span>
-            <span class="badge">🕒 Soir & week-end</span>
+            <span class="badge">⏱️ Sessions 60–90 min</span>
+            <span class="badge">📱 Docs & fiches partagés</span>
+            <span class="badge">💬 Feedback après chaque séance</span>
+            <span class="badge">🗓️ Soirs & week-end</span>
           </div>
           <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <a class="cta" href="#rdv">Réserver un appel d'orientation</a>
-            <a class="cta ghost" href="#programme">Voir la méthode</a>
+            <a class="cta pulse" href="#rdv">Réserver l'essai 30 min</a>
+            <a class="cta ghost" href="#programme">Voir comment ça marche</a>
           </div>
-          <p class="mini" style="margin-top:8px">Places limitées • France métropolitaine (UTC+1/+2) • Facture possible</p>
+          <p class="mini" style="margin-top:8px">France métropolitaine (UTC+1/+2) • Places limitées • Facture possible</p>
         </div>
         <aside class="hero-card">
           <div class="panel">
-            <h3 class="mb-0">Recevoir une proposition personnalisée</h3>
-            <p class="muted">Dites-moi le niveau, les objectifs et les disponibilités de votre enfant.</p>
-            <!-- NOTE: Pour un site statique (GitHub Pages), utilisez un service de formulaires comme Formspree ou Formsubmit. Remplacez l'URL de action ci-dessous. -->
+            <h3 style="margin-top:0">Recevoir une proposition</h3>
+            <p class="muted">Dis-moi ton niveau, tes objectifs et tes créneaux préférés.</p>
             <form id="lead" action="https://formspree.io/f/your-id" method="POST">
-              <div class="inline">
+              <div class="inline" style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
                 <div>
                   <label for="parent">Nom du parent</label>
                   <input required id="parent" name="parent" placeholder="Dupont" />
@@ -158,7 +147,7 @@
                   <input required id="email" name="email" type="email" placeholder="nom@exemple.fr" />
                 </div>
               </div>
-              <div class="inline">
+              <div class="inline" style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
                 <div>
                   <label for="eleve">Prénom de l'élève</label>
                   <input id="eleve" name="eleve" placeholder="Léna" />
@@ -176,50 +165,49 @@
               </div>
               <div>
                 <label for="objectif">Objectif principal</label>
-                <input id="objectif" name="objectif" placeholder="Remonter la moyenne, préparer le bac, combler des lacunes…" />
+                <input id="objectif" name="objectif" placeholder="Ex: +3 pts au prochain trimestre" />
               </div>
               <div>
                 <label for="message">Message (facultatif)</label>
-                <textarea id="message" name="message" rows="3" placeholder="Précisez les chapitres difficiles, le rythme souhaité, les créneaux…"></textarea>
+                <textarea id="message" name="message" rows="3" placeholder="Chapitres difficiles, DS, examens…"></textarea>
               </div>
               <input type="hidden" name="source" value="Google Ads" />
-              <button class="cta" type="submit">Recevoir la proposition</button>
-              <div class="success" id="ok">Merci ! Je reviens vers vous très vite (souvent sous 24h ouvrées).</div>
-              <p class="mini">En soumettant, vous acceptez d'être recontacté(e) par email. Aucune prospection non sollicitée.</p>
+              <button class="cta" type="submit">Envoyer</button>
+              <p class="mini">En soumettant, vous acceptez d'être recontacté(e) par email.</p>
             </form>
           </div>
         </aside>
       </div>
     </section>
 
-    <!-- PROGRAMME / METHODE -->
+    <!-- PROGRAMME / MÉTHODE -->
     <section id="programme">
       <div class="container">
-        <h2>Une méthode qui rassure les parents et redonne confiance aux élèves</h2>
+        <h2>Une méthode claire, testée et motivante</h2>
         <div class="cols">
           <div class="card">
-            <h3>Bilan initial précis</h3>
-            <p>Évaluation des acquis (raisonnement, rédaction, calcul), identification des lacunes prioritaires et définition d'un plan simple de 4 à 6 semaines.</p>
+            <h3>1) Bilan rapide</h3>
+            <p>On repère les points forts/faiblesses et on pose un mini-plan sur 4–6 semaines.</p>
           </div>
           <div class="card">
-            <h3>Explications concrètes</h3>
-            <p>Cours vivants avec exemples, fiches synthèses et <em>checklists</em> chapitre par chapitre. Rigueur + astuces d'examen.</p>
+            <h3>2) Explications concrètes</h3>
+            <p>Exemples, astuces, erreurs fréquentes. Je montre la rédaction attendue.</p>
           </div>
           <div class="card">
-            <h3>Entraînement efficace</h3>
-            <p>Sélection d'exercices ciblés (progressifs), correction commentée, devoirs courts entre les séances, suivi de la courbe de progrès.</p>
+            <h3>3) Entraînement ciblé</h3>
+            <p>Exos progressifs, corrections commentées, temps de parole équilibré.</p>
           </div>
           <div class="card">
-            <h3>Communication transparente</h3>
-            <p>Point avec les parents toutes les 3–4 séances. Compte-rendu synthétique des progrès et des prochains objectifs.</p>
+            <h3>4) Feedback utile</h3>
+            <p>Retour après chaque séance (+ message parents si besoin).</p>
           </div>
           <div class="card">
-            <h3>Matériel inclus</h3>
-            <p>Banque d'exercices, sujets type bac, fiches méthode, grille d'auto-évaluation. Tout est partagé en ligne.</p>
+            <h3>5) Ressources partagées</h3>
+            <p>Fiches récap, sujets type bac, checklists de chapitre sur mobile.</p>
           </div>
           <div class="card">
-            <h3>Souplesse des horaires</h3>
-            <p>Créneaux le soir et le week‑end, séances en visio (Zoom/Google Meet). Annulation possible jusqu'à 24h avant.</p>
+            <h3>6) Rythme flexible</h3>
+            <p>Soirs, week‑ends, intensifs pendant vacances. Annulation ≤ 24h.</p>
           </div>
         </div>
       </div>
@@ -233,9 +221,8 @@
           <div class="price">
             <h3>Tarif solidaire</h3>
             <p class="amount">à partir de 25€ / h</p>
-            <p class="muted">Selon la situation de la famille (quotient, bourse, nombre d'heures). Justificatifs possibles.</p>
+            <p class="note">Selon situation (quotient, bourse, volume). Essai 30 min offert.</p>
             <ul>
-              <li>Essai 30 min offert</li>
               <li>Sans engagement après l'essai</li>
               <li>Facture possible</li>
             </ul>
@@ -244,115 +231,86 @@
           <div class="price">
             <h3>Packs progression</h3>
             <p class="amount">10h • 20h • 30h</p>
-            <p class="muted">Remise progressive, séances de 1h ou 1h30, suivi parent inclus.</p>
+            <p class="note">Remise progressive, séances 60–90 min, suivi parent inclus.</p>
             <ul>
               <li>Plan de cours personnalisé</li>
-              <li>Accès aux ressources partagées</li>
-              <li>Préparation examens & DS</li>
+              <li>Ressources partagées</li>
+              <li>Préparation DS & bac</li>
             </ul>
             <a class="cta ghost" href="#contact">Demander un devis</a>
           </div>
         </div>
-        <p class="mini">* Les tarifs précis sont confirmés après l'appel d'orientation et le bilan initial.</p>
+        <p class="mini">* Tarifs confirmés après l'appel d'orientation et le bilan initial.</p>
       </div>
     </section>
 
-    <!-- TEMOIGNAGES -->
+    <!-- TÉMOIGNAGES -->
     <section id="temoignages">
       <div class="container">
-        <h2>Ils en parlent le mieux</h2>
+        <h2>Ils en parlent</h2>
         <div class="cols">
           <div class="card">
-            <p>"Notre fille est passée de 8 à 14 de moyenne en un trimestre. Elle a retrouvé confiance !"</p>
-            <p class="mini">— Parent d'élève, Première</p>
+            <p>« De 8 à 14 de moyenne en un trimestre. »</p>
+            <p class="mini">Parent – Première</p>
           </div>
           <div class="card">
-            <p>"Excellente préparation du bac, avec des exercices ciblés et des méthodes claires."</p>
-            <p class="mini">— Élève, Terminale spécialité</p>
+            <p>« Méthodes claires et ciblées pour le bac. »</p>
+            <p class="mini">Élève – Terminale Spé</p>
           </div>
           <div class="card">
-            <p>"Communication parfaite avec les parents et retours réguliers. Très professionnel."</p>
-            <p class="mini">— Parent d'élève, Seconde</p>
+            <p>« Retours réguliers, très pro. »</p>
+            <p class="mini">Parent – Seconde</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq">
-      <div class="container">
-        <h2>Questions fréquentes</h2>
-        <details>
-          <summary>Comment se déroule une séance type ?</summary>
-          <p>Brève vérification des notions, explication pas à pas, exercices guidés, puis devoir court à faire pour la séance suivante. Je fournis un récapitulatif.</p>
-        </details>
-        <details>
-          <summary>Quels outils utilisez-vous ?</summary>
-          <p>Visioconférence (Zoom ou Google Meet), tableau virtuel, partage d'écran, tablette graphique pour les corrections en direct.</p>
-        </details>
-        <details>
-          <summary>Peut-on arrêter si cela ne convient pas ?</summary>
-          <p>Oui. L'essai de 30 minutes est offert et sans engagement. Ensuite, vous pouvez interrompre à tout moment (hors créneau déjà planifié sous 24h).</p>
-        </details>
-        <details>
-          <summary>Intervenez-vous aussi pendant les vacances ?</summary>
-          <p>Oui, des stages de révision courts (6 à 12h) sont possibles avec planning flexible.</p>
-        </details>
       </div>
     </section>
 
     <!-- RDV / CONTACT -->
     <section id="rdv">
       <div class="container">
-        <h2>Réserver un appel d'orientation (gratuit)</h2>
-        <p class="muted">Choisissez un créneau de 15 minutes pour discuter des besoins et du planning. Je vous proposerai un plan personnalisé.</p>
+        <h2>Réserver un appel (gratuit)</h2>
+        <p class="muted">Choisis un créneau de 15 minutes pour caler objectifs et planning.</p>
         <div class="card center">
-          <!-- Remplacez le lien ci-dessous par votre calendrier (Calendly/Cal.com/Google Calendar rendez-vous) -->
-          <a class="cta" href="https://calendly.com/votre-lien" target="_blank" rel="noopener">Ouvrir mon calendrier</a>
-          <p class="mini">Ou contactez-moi : <a href="mailto:contact@votre-domaine.fr">contact@votre-domaine.fr</a> • <a href="tel:+33XXXXXXXXX">+33 X XX XX XX XX</a></p>
+          <a class="cta" href="https://calendly.com/votre-lien" target="_blank" rel="noopener">Ouvrir le calendrier</a>
+          <p class="mini">Ou contacte‑moi : <a href="mailto:contact@votre-domaine.fr">contact@votre-domaine.fr</a> • <a href="tel:+33XXXXXXXXX">+33 X XX XX XX XX</a></p>
         </div>
       </div>
     </section>
 
     <section id="contact">
       <div class="container">
-        <h2>Besoin d'une information rapide ?</h2>
-        <div class="card">
-          <p class="mb-0">Écrivez-moi à <a href="mailto:contact@votre-domaine.fr">contact@votre-domaine.fr</a> ou sur WhatsApp : <a href="https://wa.me/33XXXXXXXXX" target="_blank" rel="noopener">+33 X XX XX XX XX</a></p>
-        </div>
+        <h2>Contact</h2>
+        <div class="card">Email : <a href="mailto:contact@votre-domaine.fr">contact@votre-domaine.fr</a><br>WhatsApp : <a href="https://wa.me/33XXXXXXXXX" target="_blank" rel="noopener">+33 X XX XX XX XX</a></div>
       </div>
     </section>
   </main>
 
   <div class="floatbar">
     <div class="container inner">
-      <span class="mini">Prêt·e à en parler ? Essai 30 min offert.</span>
+      <span class="mini">Essai 30 min offert</span>
       <div style="display:flex;gap:8px;flex-wrap:wrap">
-        <a class="cta" href="#rdv">Réserver un appel</a>
-        <a class="cta ghost" href="#lead">Demander une proposition</a>
+        <a class="cta" href="#rdv">Réserver</a>
+        <a class="cta ghost" href="#programme">Voir la méthode</a>
       </div>
     </div>
   </div>
 
   <footer>
     <div class="container">
-      <div class="mini">© <span id="y"></span> – Cours particuliers de mathématiques en visioconférence • France. Mentions légales – Politique de confidentialité.</div>
+      <div class="mini">© <span id="y"></span> – Cours de maths en visio • France. Mentions légales – Politique de confidentialité.</div>
     </div>
   </footer>
 
   <script>
-    // Affiche l'année courante
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    // Gestion du message de succès pour les intégrations type Formspree/Formsubmit
+    // Feedback visuel rapide à l'envoi du formulaire (sites statiques)
     const form = document.getElementById('lead');
-    form?.addEventListener('submit', function(ev){
-      // Laisser l'envoi natif faire le travail, mais afficher un message pour les UX rapides
-      const ok = document.getElementById('ok');
-      if(ok){ ok.style.display = 'block'; }
+    form?.addEventListener('submit', function(){
+      alert('Merci ! Je reviens vers vous très vite.');
     });
 
-    // Mesure simple (anonyme) d'événements – remplacez par votre solution d'analytics si besoin
+    // Mini tracking anonyme (sessionStorage)
     function track(label){
       if(!window.sessionStorage) return;
       const k = 'mathtutor-events';
